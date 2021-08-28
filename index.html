@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Currency Converter</title>
+</head>
+<body style="text-align: center;">
+		<div>
+				<h1 style="margin-top: 40px; color:blue;" >2-Way Exchange Rate Calculator</h1>
+		</div>
+		
+		<div style="margin-top: 60px; margin-left: 500; width: 360px; height: 250px; border: 4px solid black;">
+				<h2 style="color: red;">Currency Converter</h2>
+				
+				<div>
+					<label for="amount">Enter Amount: </label>
+					<br>
+					<input type="text" id="currency1" placeholder="Amount" onkeyup="exchange()">
+					<select onchange="exchange()" id="selCurrency1">
+						<option value="dollar">Dollar</option> 
+						<option value="euro">Euro</option>
+						<option value="pound">Pound Sterling</option>
+						<option value="naira" selected>Naira</option>
+					</select>
+
+					<p><strong style="color: red;">Result: </strong></p>
+
+					<input type="text" id="currency2" placeholder="Amount" onkeyup="exchange()">
+					<select onchange="exchange()" id="selCurrency2">
+						<option value="dollar" selected>Dollar</option> 
+						<option value="euro">Euro</option>
+						<option value="pound">Pound Sterling</option>
+						<option value="naira">Naira</option>
+					</select>
+					<p id="display" style="color: red"></p>
+				</div>
+		</div>
+
+
+		<script src="converter.js">
+				
+		</script>
+</body>
+</html>
